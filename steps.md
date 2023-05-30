@@ -70,5 +70,24 @@ bin/kafka-console-producer.sh --topic demo_testing2 --bootstrap-server {Put the 
 cd kafka_2.12-3.3.1
 bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server {Put the Public IP of your EC2 Instance:9092}
 ```
-11.  
-12. 
+11. Start producer.py
+12. Start consumer.py
+
+#### Create a new S3 bucket
+13. Go to Amazon S3 --> Bucket --> Create Bucket. 
+14. Give S3 bucket a unique name and keep other things as it is. and create a new bucket. 
+
+#### Create a IAM 
+15. go to IAM service.
+16. Click on "users" in left panel. 
+17. Click on "Add users" in main window.
+18. Give username and Click on "Access Key-programmatic Access" and Press "next"
+19. In "set permission", Select "Attach existing policy directly" and Check the "AdministratorAccess". Press "next" and Press "create user".
+20. Download the csv file containing Access key and secret key.
+
+#### Install AWS CLI on Local system
+21. Install AWS CLI in Local system and enter Access Key, Secret Key and region. (Now, data can go from local system to S3 bucket using S3FS library in python)
+
+#### Create AWS Glue
+22. 
+23. 
