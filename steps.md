@@ -89,5 +89,6 @@ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server {Put the 
 21. Install AWS CLI in Local system and enter Access Key, Secret Key and region. (Now, data can go from local system to S3 bucket using S3FS library in python)
 
 #### Create AWS Glue
-22. 
-23. 
+22. Go to AWS Glue --> Select "Crawlers" --> Click on "Add crawler"
+23. Create IAM role for accessing S3 bucket by crawler.
+24. 
