@@ -71,8 +71,13 @@ cd kafka_2.12-3.3.1
 bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server {Put the Public IP of your EC2 Instance:9092}
 ```
 11. Start producer.py
+```
+python3 producer.py
+```
 12. Start consumer.py
-
+```
+python3 consumer.py
+```
 #### Create a new S3 bucket
 13. Go to Amazon S3 --> Bucket --> Create Bucket. 
 14. Give S3 bucket a unique name and keep other things as it is. and create a new bucket. 
@@ -90,5 +95,5 @@ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server {Put the 
 
 #### Create AWS Glue
 22. Go to AWS Glue --> Select "Crawlers" --> Click on "Add crawler"
-23. Create IAM role for accessing S3 bucket by crawler.
+23. Create IAM role for accessing S3 bucket by crawler (Permission Policy - AdministratorAccess).
 24. 
